@@ -114,11 +114,7 @@
     </nav>
 
     <!-- Hero -->
-    <section id="hero" class="pb-16 md:pb-24 pl-8">
-      <!--
-        grid-cols-1        = 1 column by default on mobile
-        md:grid-cols-2     = 2 columns on desktop and tablets
-      -->
+    <section id="hero" class="pl-8">
       <div
         class="mx-auto grid grid-cols-1 md:grid-cols-[51%_auto] gap-10 items-center"
       >
@@ -185,15 +181,95 @@
           </div>
         </div>
 
-        <div class="hidden md:block">
-          <img
-            src="./images/hero-building.png"
-            alt="Building"
-            class="w-full rounded-2xl"
-          />
+        <div>
+          <img src="./images/building.png" alt="Building" class="w-full" />
         </div>
       </div>
     </section>
+
+    <!-- features bar -->
+    <section id="about">
+      <div
+        class="mx-auto grid grid-cols-2 lg:grid-cols-4 divide-y divide-x divide-zinc-800"
+      >
+        <div
+          class="flex items-center justify-between p-6 group cursor-pointer border rounded-lg"
+        >
+          <div class="flex items-center gap-4">
+            <div
+              class="w-10 h-10 rounded-lg flex items-center justify-center text-xl shrink-0"
+            >
+              <img src="./images/home.png" alt="home" class="w-full" />
+            </div>
+            <span class="text-gray-300 text-sm font-medium"
+              >Find Your Dream Home</span
+            >
+          </div>
+          <span
+            class="text-gray-600 group-hover:text-violet-400 transition-colors ml-3"
+            ><i class="fa-solid fa-arrow-up-right-dots"></i
+          ></span>
+        </div>
+
+        <div
+          class="flex items-center justify-between p-6 group cursor-pointer border rounded-lg"
+        >
+          <div class="flex items-center gap-4">
+            <div
+              class="w-10 h-10 rounded-lg flex items-center justify-center text-xl shrink-0"
+            >
+              <img src="./images/cam.png" alt="camera" class="w-full" />
+            </div>
+            <span class="text-gray-300 text-sm font-medium"
+              >Unlock Property Value</span
+            >
+          </div>
+          <span
+            class="text-gray-600 group-hover:text-violet-400 transition-colors ml-3"
+            ><i class="fa-solid fa-arrow-up-right-dots"></i
+          ></span>
+        </div>
+
+        <div
+          class="flex items-center justify-between p-6 group cursor-pointer border rounded-lg"
+        >
+          <div class="flex items-center gap-4">
+            <div
+              class="w-10 h-10 rounded-lg flex items-center justify-center text-xl shrink-0"
+            >
+              <img src="./images/b2.png" alt="Management" class="w-full" />
+            </div>
+            <span class="text-gray-300 text-sm font-medium"
+              >Effortless Management</span
+            >
+          </div>
+          <span
+            class="text-gray-600 group-hover:text-violet-400 transition-colors ml-3"
+            ><i class="fa-solid fa-arrow-up-right-dots"></i
+          ></span>
+        </div>
+
+        <div
+          class="flex items-center justify-between p-6 group cursor-pointer border rounded-lg border-zinc-800"
+        >
+          <div class="flex items-center gap-4">
+            <div
+              class="w-10 h-10 rounded-lg flex items-center justify-center text-xl shrink-0"
+            >
+              <img src="./images/sun.png" alt="sun" class="w-full" />
+            </div>
+            <span class="text-gray-300 text-sm font-medium"
+              >Smart Investments</span
+            >
+          </div>
+          <span
+            class="text-gray-600 group-hover:text-violet-400 transition-colors ml-3"
+            ><i class="fa-solid fa-arrow-up-right-dots"></i
+          ></span>
+        </div>
+      </div>
+    </section>
+
     <script src="app.js"></script>
   </body>
 </html>

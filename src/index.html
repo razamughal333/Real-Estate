@@ -114,88 +114,83 @@
     </nav>
 
     <!-- Hero -->
-    <section id="hero" class="py-16 md:py-24 px-6">
+    <section id="hero" class="pb-16 md:pb-24 pl-8">
       <!--
-        grid-cols-1        = 1 column by default (mobile)
-        lg:grid-cols-2     = 2 columns on large screens (desktop)
+        grid-cols-1        = 1 column by default on mobile
+        md:grid-cols-2     = 2 columns on desktop and tablets
       -->
       <div
-        class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+        class="mx-auto grid grid-cols-1 md:grid-cols-[51%_auto] gap-10 items-center"
       >
-        <!-- LEFT: Text content -->
         <div>
-          <!-- Main headline -->
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          <h1 class="text-gray-300 text-2xl md:text-5xl font-bold">
             Discover Your Dream Property with
-            <span class="text-violet-400"> Raza Estate</span>
+            <span class="text-violet-300"> Raza Estate</span>
           </h1>
-
-          <!-- Subtitle -->
-          <p
-            class="text-gray-400 mt-6 text-base md:text-lg leading-relaxed max-w-lg"
-          >
+          <p class="text-gray-400 mt-6 text-base md:text-16 max-w-lg">
             Your journey to finding the perfect property begins here. Explore
             our listings to find the home that matches your dreams.
           </p>
 
-          <!-- CTA Buttons -->
           <div class="flex flex-wrap gap-4 mt-8">
-            <!-- Outlined button -->
             <a
               href="#about"
-              class="border border-zinc-600 text-white text-sm px-6 py-3 rounded-lg font-medium hover:border-violet-500 transition-colors"
+              class="border border-zinc-600 text-white text-sm px-6 py-3 rounded-lg font-medium hover:border-violet-500 transition-colors duration-200"
             >
               Learn More
             </a>
-            <!-- Filled purple button -->
             <a
               href="#properties"
-              class="bg-violet-600 text-white text-sm px-6 py-3 rounded-lg font-medium hover:bg-violet-500 transition-colors"
+              class="bg-violet-600 text-white text-sm px-6 py-3 rounded-lg font-medium hover:bg-violet-500 transition-colors duration-200"
             >
               Browse Properties
             </a>
           </div>
 
-          <!-- STATS ROW — 3 numbers separated by vertical borders -->
           <div
             class="grid grid-cols-3 gap-4 mt-12 pt-10 border-t border-zinc-800"
           >
             <div>
-              <p class="text-2xl md:text-3xl font-bold">200+</p>
-              <p class="text-gray-500 text-xs md:text-sm mt-1">
+              <p class="text-2xl md:text-3xl font-bold flex justify-center">
+                200+
+              </p>
+              <p
+                class="text-gray-500 text-xs md:text-sm mt-1 flex justify-center"
+              >
                 Happy Customers
               </p>
             </div>
 
-            <!-- Middle stat has left and right borders -->
             <div class="border-x border-zinc-800 px-4">
-              <p class="text-2xl md:text-3xl font-bold">10k+</p>
-              <p class="text-gray-500 text-xs md:text-sm mt-1">
+              <p class="text-2xl md:text-3xl font-bold flex justify-center">
+                10k+
+              </p>
+              <p
+                class="text-gray-500 text-xs md:text-sm mt-1 flex justify-center"
+              >
                 Properties For Clients
               </p>
             </div>
 
             <div class="pl-4">
-              <p class="text-2xl md:text-3xl font-bold">16+</p>
-              <p class="text-gray-500 text-xs md:text-sm mt-1">
+              <p class="text-2xl md:text-3xl font-bold flex justify-center">
+                16+
+              </p>
+              <p
+                class="text-gray-500 text-xs md:text-sm mt-1 flex justify-center"
+              >
                 Years of Experience
               </p>
             </div>
           </div>
         </div>
-        <!-- END LEFT -->
 
-        <!-- RIGHT: Building image (only shown on large screens) -->
-        <div class="hidden lg:block">
-          <!--
-            TO ADD YOUR IMAGE: replace this whole div with:
-            <img src="./src/images/hero-building.jpg" alt="Building" class="w-full rounded-2xl">
-          -->
-          <div
-            class="w-full h-[480px] bg-zinc-800 border border-zinc-700 rounded-2xl flex items-center justify-center text-gray-600 text-sm"
-          >
-            📷 Hero Building Image
-          </div>
+        <div class="hidden md:block">
+          <img
+            src="./images/hero-building.png"
+            alt="Building"
+            class="w-full rounded-2xl"
+          />
         </div>
       </div>
     </section>

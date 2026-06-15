@@ -5,8 +5,8 @@ closeBar.addEventListener("click", () => {
   announcementBar.classList.add("hidden");
 });
 
-const menuBtn = document.getElementById("menu-btn"); // the ☰ button
-const mobileMenu = document.getElementById("mobile-menu"); // the dropdown
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
 menuBtn.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
@@ -16,22 +16,18 @@ mobileMenu.querySelectorAll("a").forEach((link) => {
   });
 });
 
-// ---- PROPERTY CARDS SLIDER ----
+// PROPERTY CARDS SLIDER
 const slider = document.getElementById("cards-slider");
 const prevBtn = document.getElementById("prev-btn");
 const nextBtn = document.getElementById("next-btn");
 
-// Tracks which slide we're on (0 = start)
 let position = 0;
-
-// How many cards are visible depends on screen width
 function getVisibleCount() {
   if (window.innerWidth >= 1024) return 3; // desktop
   if (window.innerWidth >= 768) return 2; // tablet
   return 1; // mobile
 }
 
-// Width of one card + the gap (gap-6 = 24px)
 function getSlideAmount() {
   const card = slider.querySelector(".card-item");
   return card.offsetWidth + 24;
@@ -39,7 +35,7 @@ function getSlideAmount() {
 
 const totalCards = slider.querySelectorAll(".card-item").length;
 
-// → next button
+// next button
 nextBtn.addEventListener("click", function () {
   const maxPosition = totalCards - getVisibleCount();
   if (position < maxPosition) {
@@ -48,7 +44,7 @@ nextBtn.addEventListener("click", function () {
   }
 });
 
-// ← prev button
+// prev button
 prevBtn.addEventListener("click", function () {
   if (position > 0) {
     position--;
@@ -56,7 +52,6 @@ prevBtn.addEventListener("click", function () {
   }
 });
 
-// Reset slider position when window is resized
 window.addEventListener("resize", function () {
   position = 0;
   slider.style.transform = "translateX(0)";
